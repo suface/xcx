@@ -1,0 +1,18 @@
+<!--pages/cart/cart.wxml-->
+<text>pages/cart/cart.wxml demo</text>
+
+<view class="container carts-list">
+  <view wx:for="{{carts}}" class="carts-item" data-title="{{item.title}}" data-url="{{item.url}}" bindtap="bindViewTap">
+    <view>
+     <image class="carts-image" src="{{item.image}}" mode="aspectFill"/>
+    </view>
+
+   <view class="carts-text">
+     <text class="carts-title">{{item.title}}</text>
+     <view class="carts-subtitle">
+     <text class="carts-price">{{item.sum}}</text>
+     <text>WXStepper</text>
+    </view>
+   </view>
+  </view>
+</view>

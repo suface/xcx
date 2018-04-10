@@ -1,0 +1,52 @@
+/**app.wxss**/
+
+
+
+
+.flexbox{display:-webkit-box;
+display:-moz-box;
+display:box;
+display:-webkit-flex;
+display:-moz-flex;
+display:-ms-flexbox;
+display:flex;
+}
+.flexbox .flex1{
+-webkit-box-flex:1;
+-moz-box-flex:1;
+box-flex:1;
+-webkit-flex:1;
+-moz-flex:1;
+-ms-flex:1;
+flex:1;
+}
+
+.children_center{-webkit-align-items:center;
+align-items:center;
+-webkit-align-self:stretch;
+align-self:stretch;
+-webkit-box-align:center;
+box-align:center;
+
+-webkit-justify-content:center;
+justify-content:center;
+-webkit-box-pack:center;
+box-pack:center;
+
+}
+/*æ–‡æœ¬æº¢å‡ºå¤„ç†*/
+.single-line{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+
+image{ width: 100%}
+
+.container {
+  height: 100%;
+  -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+} 

@@ -1,0 +1,18 @@
+<!--pages/list/list.wxml-->
+<text>pages/list/list.wxml   全局的参数{{globleTitle}} /{{userInfo.nickName}}</text>
+<view  class="list-page">
+     <ul class='list'>
+         <view class="item-list" wx:for="{{list}}"   
+      wx:key="key"   data-id="{{item.uuid}}" data-title="{{item.title}}"  bindtap="viewDetail"  >
+          <view class='item-media'>
+          <image src="{{item.pic_url}}"></image>
+          </view>
+          <view class='item-content'>
+          <text class="title">{{item.title}}</text>
+           <text class="price">{{item.uuid}}</text>
+          </view>
+         </view>
+     </ul>
+     <view wx:if="{{isLoadAll}}" style="text-align:center">已经全部加载了</view>
+      <view wx:else="{{!isLoadAll}}" style="text-align:center">正在加载...</view>
+</view>

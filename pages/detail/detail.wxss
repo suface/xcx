@@ -1,0 +1,75 @@
+/* pages/detail/detail.wxss */
+page{
+    height: 100%;
+    
+}
+
+
+.detail-out{
+    height: 100%;
+     display: flex;
+     flex-direction: column;
+    font-family: "Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+
+
+.detail-list{
+    flex: 1;
+    overflow: hidden; padding-bottom: 44px;
+}
+.detail-name{
+    font-size: 14px;
+    color: #aaa
+}
+.detail-name ul{
+   display: flex;
+   flex-direction: column;
+}
+.detail-name li{
+    height:80rpx;
+}
+
+.slider-out{ position: relative; width: 100%; padding-bottom: 100%; overflow: hidden}
+.slider-in{ position: absolute; width: 100%;  height: 100%; overflow: hidden;left: 0; top: 0;}
+
+.slider-image{ position: absolute; width: 100%;  height: 100%;  display: block }
+
+.detail-title{ height: 44px;  line-height: 22px; font-size: 14px;}
+
+
+.detail-footer{
+  position: fixed; left:0; right:0; bottom: 0; margin: 0 auto;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, .3)
+}
+.detail-1{
+    flex:1;
+     height: 100%;
+  
+}
+.detail-2{
+    flex:1;
+     height: 100%;
+}
+.detail-3{
+    flex:1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f47920
+}
+.detail-4{
+    flex:1;
+    height: 100%;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    background-color: red;
+}

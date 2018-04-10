@@ -1,0 +1,51 @@
+<!--pages/detail/detail.wxml-->
+<!-- <view>{{msg}}</view> -->
+ <!-- <view>ajax title:{{title}}</view> -->
+<view class="detail-box">
+   
+
+
+   <view class="detail-list">
+        <scroll-view scroll-y="true" style="height: 100%;">
+
+           <view class="slider-out">
+             <swiper class="slider-in"  indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+               <block wx:for="{{detailgood.pic_url}}" wx:key="key">
+               <swiper-item>
+                  <image src="{{item}}" class="slider-image" />
+               </swiper-item>
+               </block>
+              </swiper>
+
+              </view>
+           
+
+            <text class="detail-title">{{detailgood.title}}</text>
+            <view class="detail-name">
+                    <text>原价{{detailgood.cur_price}}</text>
+                    <text>规格 {{detailgood.icat_name}}</text>                
+            </view>
+
+           <view class="detail-ifrmae" style="height:600px;">
+                     图文详情             
+            </view>
+
+
+           <view>
+          
+           </view>
+           <view> 图文详情    end</view> 
+            </scroll-view>
+    </view>
+
+
+   <go-top isShow="{{topFlag}}"></go-top>
+
+    <view class="detail-footer">
+      <view class="detail-1"></view>
+      <view class="detail-2"></view>
+      <view class="detail-3" bindtap="clicktocart"><text>加入购物车</text></view>
+      <view class="detail-4"><text>立即购买</text></view>
+    </view>
+
+</view>

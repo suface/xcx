@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class="container">
+  
+ 
+<view class="demos">小程序 demo</view>
+
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+
+    
+    <block wx:else>
+      去log 页面<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+
+
+<view class="usermotto" bindtap="clicklist" >
+    <text class="user-motto">去列表页面</text>
+  </view>
+
+  <view class="usermotto" bindtap="clickdetails" >
+    <text class="user-motto">去详细页</text>
+  </view>
+  
+
+<view class="usermotto" bindtap="clickuser" >
+    <text class="user-motto">去用户页面</text>
+  </view>
+  
+
+
+
+
+<navigator class="usermotto" url="/pages/cart/cart">
+			<view class="my-draw"> 去cart页面</view>
+		</navigator>
+
+
+<navigator class="usermotto" url="/pages/user/user">
+			<view class="my-draw">navigator去 去用户页面2 页面</view>
+		</navigator>
+<navigator class="usermotto" url="/pages/webview/webview">
+			<view class="my-draw">navigator 去 webview 页面 个人网站不支持</view>
+		</navigator>
+
+ <view class='flexbox index-tab'>
+   <view bindtap='clickTab' data-current="0" class="flex1 {{currentTab==0?'active':''}}">首页</view>
+   <view  bindtap='clickTab' data-current="1" class="flex1 {{currentTab==1?'active':''}}">详细页</view>
+    <view bindtap='clickTab' data-current="2" class="flex1 {{currentTab==2?'active':''}}">其他</view>
+</view>
+
+</view>

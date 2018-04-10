@@ -1,0 +1,5 @@
+<!--component/goTop/goTop.wxml-->
+
+<view class="goTop" wx:if="{{isShow}}"  bindtap="clickgoTop">
+<slot></slot>
+</view>

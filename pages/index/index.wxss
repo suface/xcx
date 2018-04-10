@@ -1,0 +1,32 @@
+/**index.wxss**/
+.index-tab{ width: 100%; height: 44px; line-height: 44px; text-align: center; background: #333; position: fixed; left:0; right:0; margin-left: auto; margin-right: auto; bottom: 0; z-index: 999; color: #fff;
+}
+.index-tab .active{
+  background-color: #666;
+}
+.index-tab .one{
+  
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 20px;
+}
+.demos{margin-top: 20px; text-align: center; width: 100%; border: 2px  solid red; padding: 20px;  -webkit-box-sizing: border-box;
+ box-sizing: border-box;}
